@@ -1,0 +1,11 @@
+google_patch=20190705
+ota-id=RMX1851EX_11.A.17_0170_201907170456
+ota-property-files=metadata:69:289         
+ota-required-cache=0
+ota-type=BLOCK
+ota_version=RMX1851EX_11.A.17_0170_201907170456
+patch_type=1
+post-timestamp=1563314434
+pre-device=RMX1851
+version_name=RMX1851EX_11_A.17
+wipe=0

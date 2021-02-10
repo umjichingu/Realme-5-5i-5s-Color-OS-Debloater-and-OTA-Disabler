@@ -1,0 +1,185 @@
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#           Welcome to the ColorOs6            #");
+ui_print("#       Debloater and OTA Update Disabler      #");
+ui_print("#             Android Pie Edition              #");
+ui_print("#                                              #");
+ui_print("#            Created by Piri Yewon             #");
+ui_print("#                                              #");
+ui_print("#                 Disclaimer:                  #");
+ui_print("#   By flashing this you accept responsiblity  #");
+ui_print("#   for anything that happens to your device   #");
+ui_print("#                                              #");
+ui_print("================================================");
+ui_print(" ");
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#             Mounting System                  #");
+ui_print("#                                              #");
+ui_print("================================================"); 
+ui_print(" ");
+
+ifelse(is_mounted("/system_root"), unmount("/system_root"));
+
+mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system_root", "");
+
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#           Mounting System Complete           #");
+ui_print("#                                              #");
+ui_print("================================================"); 
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#      Commencing the de-bloating process      #");
+ui_print("#                                              #");
+ui_print("#      First target located > /system/app/     #");
+ui_print("#                                              #");
+ui_print("================================================"); 
+
+ui_print(" ----- >     Deleting Google Apps      < ------ ");
+
+delete_recursive("/system_root/system/app/Gmail2");
+delete_recursive("/system_root/system/app/GoogleTTS");
+delete_recursive("/system_root/system/app/Maps");
+delete_recursive("/system_root/system/app/Music2");
+delete_recursive("/system_root/system/app/Photos");
+delete_recursive("/system_root/system/app/Videos");
+delete_recursive("/system_root/system/app/YouTube");
+delete_recursive("/system_root/system/app/Velvet");
+delete_recursive("/system_root/system/app/GooglePrintRecommendationService");
+delete_recursive("/system_root/system/app/YTMusic");
+
+ui_print(" ------>        Delete Complete        < ------ ");
+
+ui_print(" ------>    Deleting Oppo Bloatwares   < ------ ");
+
+delete_recursive("/system_root/system/app/BackupAndRestore");
+delete_recursive("/system_root/system/app/SystemAppUpdateService");
+delete_recursive("/system_root/system/app/OppoOperationManualExp");
+delete_recursive("/system_root/system/app/SoftsimRedteaRoaming");
+delete_recursive("/system_root/system/app/SoftsimRedteaRoamingDeamon");
+delete_recursive("/system_root/system/app/AssistantScreen");
+delete_recursive("/system_root/system/app/ChildrenSpace");
+delete_recursive("/system_root/system/app/SecurePay");
+delete_recursive("/system_root/system/app/OppoAtlasService");
+delete_recursive("/system_root/system/app/OppoLogKit_Beta");
+delete_recursive("/system_root/system/app/Pictorial");
+delete_recursive("/system_root/system/app/OppoWeather2");
+delete_recursive("/system_root/system/app/OppoWeatherService");
+delete_recursive("/system_root/system/app/SystemAppUpdateService");
+delete_recursive("/system_root/system/app/VideoGallery");
+delete_recursive("/system_root/system/app/SmartDrive");
+delete_recursive("/system_root/system/app/OppoMusic");
+delete_recursive("/system_root/system/app/Browser");
+delete_recursive("/system_root/system/app/GlobalSearch");
+delete_recursive("/system_root/system/app/Stk");
+delete_recursive("/system_root/system/app/OppoCompass2");
+delete_recursive("/system_root/system/app/sg.gov.mnd.OneService");
+delete_recursive("/system_root/system/app/Keep");
+delete_recursive("/system_root/system/app/KeKeMarket");
+delete_recursive("/system_root/system/app/KeKeUserCenter");
+delete_recursive("/system_root/system/app/KeKePay");
+delete_recursive("/system_root/system/app/FM2");
+delete_recursive("/system_root/system/app/Gamecenter");
+delete_recursive("/system_root/system/app/GameSpace");
+delete_recursive("/system_root/system/app/com.korvac.liquid");
+delete_recursive("/system_root/system/app/com.m1.mym1");
+delete_recursive("/system_root/system/app/com.singtel.mysingtel");
+delete_recursive("/system_root/system/app/deezer.android.app");
+
+ui_print(" ------>        Delete Complete        < ------ ");
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#                                              #");
+ui_print("#        First Target has been deleted         #");
+ui_print("#                                              #");
+ui_print("#                                              #");
+ui_print("================================================");
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#          Locating next target...             #");
+ui_print("#                                              #");
+ui_print("================================================");
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#      Next target located > /priv-app         #");
+ui_print("#                                              #");
+ui_print("================================================");
+
+ui_print(" ----- >     Deleting Google Apps      < ------ ");
+
+delete_recursive("/system_root/system/priv-app/Wellbeing");
+delete_recursive("/system_root/system/product/priv-app/GoogleOneTimeInitializer");
+delete_recursive("/system_root/system/product/priv-app/GooglePartnerSetup");
+delete_recursive("/system_root/system/priv-app/TagGoogle");
+
+ui_print(" ------>        Delete Complete        < ------ ");
+
+ui_print(" ------>    Deleting Oppo Bloatwares   < ------ ");
+
+delete_recursive("/system_root/system/priv-app/com.facebook.services-common_us");
+delete_recursive("/system_root/system/priv-app/com.facebook.system-common_us");
+delete_recursive("/system_root/system/priv-app/CloudService");
+delete_recursive("/system_root/system/product/priv-app/SetupWizard");
+delete_recursive("/system_root/system/priv-app/SoftsimRedteaRoaming");
+delete_recursive("/system_root/system/priv-app/SoftsimRedteaRoamingDeamon");
+
+ui_print(" ------>       Delete  Complete        < ------ ");
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#       Second Target has been deleted         #");
+ui_print("#                                              #");
+ui_print("================================================");
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#          Locating next target...             #");
+ui_print("#                                              #");
+ui_print("================================================");
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#      Next target located > OTA Update        #");
+ui_print("#                                              #");
+ui_print("================================================");
+
+ui_print(" ------>     Disabling OTA Update      < ------ ");
+
+delete_recursive("/system_root/system/app/OTA");
+delete_recursive("/system_root/system/app/OTA");
+delete_recursive("/system_root/system/app/OppoTZUpdate");
+
+ui_print(" ------>       Delete Complete         < ------ ");
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#          Your ROM is now bloat-free          #");
+ui_print("#                                              #");
+ui_print("#           and OTA Update Disabled            #");
+ui_print("#                                              #");
+ui_print("#             Brought to you by:               #");
+ui_print("#                 Piri Yewon                   #");
+ui_print("#          Realme 5/5i/5s Philippines          #");
+ui_print("#                                              #");
+ui_print("================================================");
+
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#            Unmounting System                 #");
+ui_print("#                                              #");
+ui_print("================================================"); 
+ui_print(" ");
+ui_print(" ");
+ui_print("================================================");
+ui_print("#                                              #");
+ui_print("#         Unmounting System Complete           #");
+ui_print("#                                              #");
+ui_print("================================================"); 
